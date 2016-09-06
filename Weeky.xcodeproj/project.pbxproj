@@ -107,9 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				84E401B21D77EAB4005661FF /* Podfile */,
-				84947F2B1D768C6B0021DDE4 /* Besafe */,
-				84947F401D768C6B0021DDE4 /* BesafeTests */,
-				84947F4B1D768C6B0021DDE4 /* BesafeUITests */,
+				84947F2B1D768C6B0021DDE4 /* Weeky */,
+				84947F401D768C6B0021DDE4 /* WeekyTests */,
+				84947F4B1D768C6B0021DDE4 /* WeekyUITests */,
 				84947F2A1D768C6A0021DDE4 /* Products */,
 				D5FFD3BDFD052E68D61F6B33 /* Pods */,
 				90ACAA1E2A415FD74737509D /* Frameworks */,
@@ -126,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84947F2B1D768C6B0021DDE4 /* Besafe */ = {
+		84947F2B1D768C6B0021DDE4 /* Weeky */ = {
 			isa = PBXGroup;
 			children = (
 				84E401AB1D779C89005661FF /* View */,
@@ -140,24 +140,27 @@
 				84E401AC1D779D45005661FF /* FeedViewController.swift */,
 				846C98041D7B886D00EE5559 /* DaysViewController.swift */,
 			);
+			name = Weeky;
 			path = Besafe;
 			sourceTree = "<group>";
 		};
-		84947F401D768C6B0021DDE4 /* BesafeTests */ = {
+		84947F401D768C6B0021DDE4 /* WeekyTests */ = {
 			isa = PBXGroup;
 			children = (
 				84947F411D768C6B0021DDE4 /* BesafeTests.swift */,
 				84947F431D768C6B0021DDE4 /* Info.plist */,
 			);
+			name = WeekyTests;
 			path = BesafeTests;
 			sourceTree = "<group>";
 		};
-		84947F4B1D768C6B0021DDE4 /* BesafeUITests */ = {
+		84947F4B1D768C6B0021DDE4 /* WeekyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				84947F4C1D768C6B0021DDE4 /* BesafeUITests.swift */,
 				84947F4E1D768C6B0021DDE4 /* Info.plist */,
 			);
+			name = WeekyUITests;
 			path = BesafeUITests;
 			sourceTree = "<group>";
 		};
