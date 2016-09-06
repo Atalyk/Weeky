@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843174601D78CF55004277FA /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431745F1D78CF55004277FA /* DatePicker.swift */; };
+		84467DA51D79E18600528130 /* NotificationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84467DA41D79E18500528130 /* NotificationObject.swift */; };
+		846C98051D7B886D00EE5559 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C98041D7B886D00EE5559 /* DaysViewController.swift */; };
+		846C98071D7B88E100EE5559 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C98061D7B88E100EE5559 /* DayTableViewCell.swift */; };
+		846C980D1D7BCD0000EE5559 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C980C1D7BCD0000EE5559 /* Colors.swift */; };
 		84947F2D1D768C6B0021DDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F2C1D768C6B0021DDE4 /* AppDelegate.swift */; };
-		84947F2F1D768C6B0021DDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F2E1D768C6B0021DDE4 /* ViewController.swift */; };
 		84947F321D768C6B0021DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84947F301D768C6B0021DDE4 /* Main.storyboard */; };
 		84947F341D768C6B0021DDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84947F331D768C6B0021DDE4 /* Assets.xcassets */; };
 		84947F371D768C6B0021DDE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84947F351D768C6B0021DDE4 /* LaunchScreen.storyboard */; };
 		84947F421D768C6B0021DDE4 /* BesafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F411D768C6B0021DDE4 /* BesafeTests.swift */; };
 		84947F4D1D768C6B0021DDE4 /* BesafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F4C1D768C6B0021DDE4 /* BesafeUITests.swift */; };
+		84947F5B1D768CA60021DDE4 /* AddNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F5A1D768CA60021DDE4 /* AddNotificationViewController.swift */; };
+		84947F601D768EF00021DDE4 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F5F1D768EF00021DDE4 /* NotificationList.swift */; };
+		84947F621D7694A60021DDE4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84947F611D7694A60021DDE4 /* NotificationView.swift */; };
+		84D380E21D7CB832006DA5BB /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D380E11D7CB831006DA5BB /* Tags.swift */; };
+		84E401AD1D779D45005661FF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E401AC1D779D45005661FF /* FeedViewController.swift */; };
+		84E401AF1D779DCE005661FF /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E401AE1D779DCE005661FF /* FeedView.swift */; };
+		84E401B11D77A029005661FF /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E401B01D77A029005661FF /* NotificationTableViewCell.swift */; };
+		84E401B31D77EAB4005661FF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84E401B21D77EAB4005661FF /* Podfile */; };
+		89B8CE5629FF7C63EB0DFCDB /* Pods_Besafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3E2039906428DB83D5FCC /* Pods_Besafe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +47,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		84947F291D768C6A0021DDE4 /* Besafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Besafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166FCB8A9533E881394E1B24 /* Pods-Besafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Besafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Besafe/Pods-Besafe.release.xcconfig"; sourceTree = "<group>"; };
+		2DF3E2039906428DB83D5FCC /* Pods_Besafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Besafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8431745F1D78CF55004277FA /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		84467DA41D79E18500528130 /* NotificationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObject.swift; sourceTree = "<group>"; };
+		846C98041D7B886D00EE5559 /* DaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
+		846C98061D7B88E100EE5559 /* DayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
+		846C980C1D7BCD0000EE5559 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		84947F291D768C6A0021DDE4 /* Weeky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weeky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84947F2C1D768C6B0021DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84947F2E1D768C6B0021DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84947F311D768C6B0021DDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84947F331D768C6B0021DDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84947F361D768C6B0021DDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84947F381D768C6B0021DDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84947F3D1D768C6B0021DDE4 /* BesafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BesafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84947F3D1D768C6B0021DDE4 /* Weeky.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weeky.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84947F411D768C6B0021DDE4 /* BesafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesafeTests.swift; sourceTree = "<group>"; };
 		84947F431D768C6B0021DDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84947F481D768C6B0021DDE4 /* BesafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BesafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84947F481D768C6B0021DDE4 /* Weeky.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weeky.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84947F4C1D768C6B0021DDE4 /* BesafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesafeUITests.swift; sourceTree = "<group>"; };
 		84947F4E1D768C6B0021DDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84947F5A1D768CA60021DDE4 /* AddNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNotificationViewController.swift; sourceTree = "<group>"; };
+		84947F5F1D768EF00021DDE4 /* NotificationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
+		84947F611D7694A60021DDE4 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		84D380E11D7CB831006DA5BB /* Tags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		84E401AC1D779D45005661FF /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		84E401AE1D779DCE005661FF /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		84E401B01D77A029005661FF /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		84E401B21D77EAB4005661FF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF6BF041CF6E03D0C0A6CD61 /* Pods-Besafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Besafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Besafe/Pods-Besafe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B8CE5629FF7C63EB0DFCDB /* Pods_Besafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,19 +106,22 @@
 		84947F201D768C6A0021DDE4 = {
 			isa = PBXGroup;
 			children = (
+				84E401B21D77EAB4005661FF /* Podfile */,
 				84947F2B1D768C6B0021DDE4 /* Besafe */,
 				84947F401D768C6B0021DDE4 /* BesafeTests */,
 				84947F4B1D768C6B0021DDE4 /* BesafeUITests */,
 				84947F2A1D768C6A0021DDE4 /* Products */,
+				D5FFD3BDFD052E68D61F6B33 /* Pods */,
+				90ACAA1E2A415FD74737509D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		84947F2A1D768C6A0021DDE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84947F291D768C6A0021DDE4 /* Besafe.app */,
-				84947F3D1D768C6B0021DDE4 /* BesafeTests.xctest */,
-				84947F481D768C6B0021DDE4 /* BesafeUITests.xctest */,
+				84947F291D768C6A0021DDE4 /* Weeky.app */,
+				84947F3D1D768C6B0021DDE4 /* Weeky.xctest */,
+				84947F481D768C6B0021DDE4 /* Weeky.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +129,16 @@
 		84947F2B1D768C6B0021DDE4 /* Besafe */ = {
 			isa = PBXGroup;
 			children = (
+				84E401AB1D779C89005661FF /* View */,
+				84947F5C1D768DE70021DDE4 /* Model */,
 				84947F2C1D768C6B0021DDE4 /* AppDelegate.swift */,
-				84947F2E1D768C6B0021DDE4 /* ViewController.swift */,
 				84947F301D768C6B0021DDE4 /* Main.storyboard */,
 				84947F331D768C6B0021DDE4 /* Assets.xcassets */,
 				84947F351D768C6B0021DDE4 /* LaunchScreen.storyboard */,
 				84947F381D768C6B0021DDE4 /* Info.plist */,
+				84947F5A1D768CA60021DDE4 /* AddNotificationViewController.swift */,
+				84E401AC1D779D45005661FF /* FeedViewController.swift */,
+				846C98041D7B886D00EE5559 /* DaysViewController.swift */,
 			);
 			path = Besafe;
 			sourceTree = "<group>";
@@ -125,29 +161,72 @@
 			path = BesafeUITests;
 			sourceTree = "<group>";
 		};
+		84947F5C1D768DE70021DDE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84947F5F1D768EF00021DDE4 /* NotificationList.swift */,
+				84467DA41D79E18500528130 /* NotificationObject.swift */,
+				846C980C1D7BCD0000EE5559 /* Colors.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84E401AB1D779C89005661FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84947F611D7694A60021DDE4 /* NotificationView.swift */,
+				84E401AE1D779DCE005661FF /* FeedView.swift */,
+				84E401B01D77A029005661FF /* NotificationTableViewCell.swift */,
+				8431745F1D78CF55004277FA /* DatePicker.swift */,
+				846C98061D7B88E100EE5559 /* DayTableViewCell.swift */,
+				84D380E11D7CB831006DA5BB /* Tags.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		90ACAA1E2A415FD74737509D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF3E2039906428DB83D5FCC /* Pods_Besafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5FFD3BDFD052E68D61F6B33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BF041CF6E03D0C0A6CD61 /* Pods-Besafe.debug.xcconfig */,
+				166FCB8A9533E881394E1B24 /* Pods-Besafe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84947F281D768C6A0021DDE4 /* Besafe */ = {
+		84947F281D768C6A0021DDE4 /* Weeky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84947F511D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "Besafe" */;
+			buildConfigurationList = 84947F511D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "Weeky" */;
 			buildPhases = (
+				37E965C9B3790DF669121969 /* [CP] Check Pods Manifest.lock */,
 				84947F251D768C6A0021DDE4 /* Sources */,
 				84947F261D768C6A0021DDE4 /* Frameworks */,
 				84947F271D768C6A0021DDE4 /* Resources */,
+				CD009786C1A20BDF991112E9 /* [CP] Embed Pods Frameworks */,
+				0FDE70ABA53EC16A73A073B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Besafe;
+			name = Weeky;
 			productName = Besafe;
-			productReference = 84947F291D768C6A0021DDE4 /* Besafe.app */;
+			productReference = 84947F291D768C6A0021DDE4 /* Weeky.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84947F3C1D768C6B0021DDE4 /* BesafeTests */ = {
+		84947F3C1D768C6B0021DDE4 /* WeekyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84947F541D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "BesafeTests" */;
+			buildConfigurationList = 84947F541D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "WeekyTests" */;
 			buildPhases = (
 				84947F391D768C6B0021DDE4 /* Sources */,
 				84947F3A1D768C6B0021DDE4 /* Frameworks */,
@@ -158,14 +237,14 @@
 			dependencies = (
 				84947F3F1D768C6B0021DDE4 /* PBXTargetDependency */,
 			);
-			name = BesafeTests;
+			name = WeekyTests;
 			productName = BesafeTests;
-			productReference = 84947F3D1D768C6B0021DDE4 /* BesafeTests.xctest */;
+			productReference = 84947F3D1D768C6B0021DDE4 /* Weeky.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		84947F471D768C6B0021DDE4 /* BesafeUITests */ = {
+		84947F471D768C6B0021DDE4 /* WeekyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84947F571D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "BesafeUITests" */;
+			buildConfigurationList = 84947F571D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "WeekyUITests" */;
 			buildPhases = (
 				84947F441D768C6B0021DDE4 /* Sources */,
 				84947F451D768C6B0021DDE4 /* Frameworks */,
@@ -176,9 +255,9 @@
 			dependencies = (
 				84947F4A1D768C6B0021DDE4 /* PBXTargetDependency */,
 			);
-			name = BesafeUITests;
+			name = WeekyUITests;
 			productName = BesafeUITests;
-			productReference = 84947F481D768C6B0021DDE4 /* BesafeUITests.xctest */;
+			productReference = 84947F481D768C6B0021DDE4 /* Weeky.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -193,6 +272,7 @@
 				TargetAttributes = {
 					84947F281D768C6A0021DDE4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AB65P3C5XF;
 					};
 					84947F3C1D768C6B0021DDE4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -204,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84947F241D768C6A0021DDE4 /* Build configuration list for PBXProject "Besafe" */;
+			buildConfigurationList = 84947F241D768C6A0021DDE4 /* Build configuration list for PBXProject "Weeky" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,9 +297,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84947F281D768C6A0021DDE4 /* Besafe */,
-				84947F3C1D768C6B0021DDE4 /* BesafeTests */,
-				84947F471D768C6B0021DDE4 /* BesafeUITests */,
+				84947F281D768C6A0021DDE4 /* Weeky */,
+				84947F3C1D768C6B0021DDE4 /* WeekyTests */,
+				84947F471D768C6B0021DDE4 /* WeekyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +311,7 @@
 			files = (
 				84947F371D768C6B0021DDE4 /* LaunchScreen.storyboard in Resources */,
 				84947F341D768C6B0021DDE4 /* Assets.xcassets in Resources */,
+				84E401B31D77EAB4005661FF /* Podfile in Resources */,
 				84947F321D768C6B0021DDE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +332,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FDE70ABA53EC16A73A073B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Besafe/Pods-Besafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37E965C9B3790DF669121969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD009786C1A20BDF991112E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Besafe/Pods-Besafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84947F251D768C6A0021DDE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84947F2F1D768C6B0021DDE4 /* ViewController.swift in Sources */,
+				84E401AF1D779DCE005661FF /* FeedView.swift in Sources */,
+				84467DA51D79E18600528130 /* NotificationObject.swift in Sources */,
+				846C980D1D7BCD0000EE5559 /* Colors.swift in Sources */,
+				846C98051D7B886D00EE5559 /* DaysViewController.swift in Sources */,
+				84947F601D768EF00021DDE4 /* NotificationList.swift in Sources */,
+				84D380E21D7CB832006DA5BB /* Tags.swift in Sources */,
+				84947F621D7694A60021DDE4 /* NotificationView.swift in Sources */,
+				84E401B11D77A029005661FF /* NotificationTableViewCell.swift in Sources */,
 				84947F2D1D768C6B0021DDE4 /* AppDelegate.swift in Sources */,
+				84947F5B1D768CA60021DDE4 /* AddNotificationViewController.swift in Sources */,
+				84E401AD1D779D45005661FF /* FeedViewController.swift in Sources */,
+				846C98071D7B88E100EE5559 /* DayTableViewCell.swift in Sources */,
+				843174601D78CF55004277FA /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +422,12 @@
 /* Begin PBXTargetDependency section */
 		84947F3F1D768C6B0021DDE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84947F281D768C6A0021DDE4 /* Besafe */;
+			target = 84947F281D768C6A0021DDE4 /* Weeky */;
 			targetProxy = 84947F3E1D768C6B0021DDE4 /* PBXContainerItemProxy */;
 		};
 		84947F4A1D768C6B0021DDE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84947F281D768C6A0021DDE4 /* Besafe */;
+			target = 84947F281D768C6A0021DDE4 /* Weeky */;
 			targetProxy = 84947F491D768C6B0021DDE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -349,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -397,23 +537,31 @@
 		};
 		84947F521D768C6B0021DDE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BF041CF6E03D0C0A6CD61 /* Pods-Besafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Besafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.Besafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weeky;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		84947F531D768C6B0021DDE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166FCB8A9533E881394E1B24 /* Pods-Besafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Besafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.Besafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weeky;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -424,8 +572,8 @@
 				INFOPLIST_FILE = BesafeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.BesafeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Besafe.app/Besafe";
+				PRODUCT_NAME = Weeky;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weeky.app/Weeky";
 			};
 			name = Debug;
 		};
@@ -436,8 +584,8 @@
 				INFOPLIST_FILE = BesafeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.BesafeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Besafe.app/Besafe";
+				PRODUCT_NAME = Weeky;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weeky.app/Weeky";
 			};
 			name = Release;
 		};
@@ -447,7 +595,7 @@
 				INFOPLIST_FILE = BesafeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.BesafeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weeky;
 				TEST_TARGET_NAME = Besafe;
 			};
 			name = Debug;
@@ -458,7 +606,7 @@
 				INFOPLIST_FILE = BesafeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calc.aakash.BesafeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weeky;
 				TEST_TARGET_NAME = Besafe;
 			};
 			name = Release;
@@ -466,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84947F241D768C6A0021DDE4 /* Build configuration list for PBXProject "Besafe" */ = {
+		84947F241D768C6A0021DDE4 /* Build configuration list for PBXProject "Weeky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84947F4F1D768C6B0021DDE4 /* Debug */,
@@ -475,29 +623,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84947F511D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "Besafe" */ = {
+		84947F511D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "Weeky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84947F521D768C6B0021DDE4 /* Debug */,
 				84947F531D768C6B0021DDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		84947F541D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "BesafeTests" */ = {
+		84947F541D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "WeekyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84947F551D768C6B0021DDE4 /* Debug */,
 				84947F561D768C6B0021DDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		84947F571D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "BesafeUITests" */ = {
+		84947F571D768C6B0021DDE4 /* Build configuration list for PBXNativeTarget "WeekyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84947F581D768C6B0021DDE4 /* Debug */,
 				84947F591D768C6B0021DDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

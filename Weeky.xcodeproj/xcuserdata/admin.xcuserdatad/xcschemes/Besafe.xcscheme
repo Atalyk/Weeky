@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84947F281D768C6A0021DDE4"
-               BuildableName = "Besafe.app"
-               BlueprintName = "Besafe"
-               ReferencedContainer = "container:Besafe.xcodeproj">
+               BuildableName = "Weeky.app"
+               BlueprintName = "Weeky"
+               ReferencedContainer = "container:Weeky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84947F3C1D768C6B0021DDE4"
-               BuildableName = "BesafeTests.xctest"
-               BlueprintName = "BesafeTests"
-               ReferencedContainer = "container:Besafe.xcodeproj">
+               BuildableName = "Weeky.xctest"
+               BlueprintName = "WeekyTests"
+               ReferencedContainer = "container:Weeky.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84947F471D768C6B0021DDE4"
-               BuildableName = "BesafeUITests.xctest"
-               BlueprintName = "BesafeUITests"
-               ReferencedContainer = "container:Besafe.xcodeproj">
+               BuildableName = "Weeky.xctest"
+               BlueprintName = "WeekyUITests"
+               ReferencedContainer = "container:Weeky.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84947F281D768C6A0021DDE4"
-            BuildableName = "Besafe.app"
-            BlueprintName = "Besafe"
-            ReferencedContainer = "container:Besafe.xcodeproj">
+            BuildableName = "Weeky.app"
+            BlueprintName = "Weeky"
+            ReferencedContainer = "container:Weeky.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84947F281D768C6A0021DDE4"
-            BuildableName = "Besafe.app"
-            BlueprintName = "Besafe"
-            ReferencedContainer = "container:Besafe.xcodeproj">
+            BuildableName = "Weeky.app"
+            BlueprintName = "Weeky"
+            ReferencedContainer = "container:Weeky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84947F281D768C6A0021DDE4"
-            BuildableName = "Besafe.app"
-            BlueprintName = "Besafe"
-            ReferencedContainer = "container:Besafe.xcodeproj">
+            BuildableName = "Weeky.app"
+            BlueprintName = "Weeky"
+            ReferencedContainer = "container:Weeky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
