@@ -38,7 +38,8 @@ class FeedView : UIView {
         textView = UITextView(frame: CGRect(x: screenBounds.width*0.1, y: screenBounds.height*0.45, width: screenBounds.width*0.8, height: screenBounds.height*0.3))
         textView.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.04)
         textView.textAlignment = .Center
-        textView.text = "There aren't any notes that currently available. Swipe right to add a new note or swipe left to return to week days."
+        textView.editable = false
+        textView.text = "There aren't any notes that currently available. Swipe right to add a new note or swipe left to return."
         self.addSubview(textView)
     }
     

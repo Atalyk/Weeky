@@ -34,16 +34,16 @@ class NotificationTableViewCell: UITableViewCell {
         dateLabel.textColor = UIColor.whiteColor()
         self.addSubview(dateLabel)
             
-        notificationLabel = UILabel(frame: CGRect(x: screenBounds.width*0.03, y: 0, width: screenBounds.width*0.68, height: self.frame.height))
-        notificationLabel.font = UIFont(name: "Helvetica-Bold", size: screenBounds.width*0.05)
+        notificationLabel = UILabel(frame: CGRect(x: screenBounds.width*0.03, y: 0, width: screenBounds.width*0.68, height: screenBounds.height*0.1))
+        notificationLabel.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.06)
         notificationLabel.textAlignment = .Left
         notificationLabel.textColor = UIColor.blackColor()
         self.addSubview(notificationLabel)
         
         noteLabel = UILabel(frame: CGRect(x: screenBounds.width*0.03, y: self.frame.height*0.6, width: screenBounds.width*0.68, height: self.frame.height))
         noteLabel.text = "Lorem ipsum bal bla bla"
-        noteLabel.textColor = UIColor.lightGrayColor()
-        noteLabel.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.05)
+        noteLabel.textColor = UIColor.whiteColor()
+        noteLabel.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.04)
         noteLabel.textAlignment = .Left
         self.addSubview(noteLabel)
     }

@@ -103,6 +103,10 @@ class AddNotificationViewController: UIViewController, UIImagePickerControllerDe
     
     func setup() {
         
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+        
         self.view.backgroundColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 1.0)
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddNotificationViewController.hideViews))
@@ -121,14 +125,14 @@ class AddNotificationViewController: UIViewController, UIImagePickerControllerDe
         self.view.addSubview(imageView)
         
         titleTextfield = UITextField(frame: CGRect(x: screenBounds.width*0.07, y: screenBounds.height*0.05, width: screenBounds.width*0.9, height: screenBounds.height*0.05))
-        titleTextfield.placeholder = "Title"
+        titleTextfield.placeholder = "To do"
         titleTextfield.sizeToFit()
-        titleTextfield.font = UIFont(name: "Helvetica-Bold", size: screenBounds.width*0.05)
+        titleTextfield.font = UIFont(name: "Helvetica-Bold", size: screenBounds.width*0.06)
         self.view.addSubview(titleTextfield)
         
         noteTextfield = KMPlaceholderTextView(frame: CGRect(x: screenBounds.width*0.05, y: screenBounds.height*0.11, width: screenBounds.width*0.9, height: screenBounds.height*0.08))
         noteTextfield.placeholder = "Note"
-        noteTextfield.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.045)
+        noteTextfield.font = UIFont(name: "Helvetica-Light", size: screenBounds.width*0.055)
         noteTextfield.delegate = self
         noteTextfield.contentInset = UIEdgeInsetsMake(0.0, -5.0, 0.0, 0.0)
         noteTextfield.scrollEnabled = false
@@ -277,6 +281,22 @@ class AddNotificationViewController: UIViewController, UIImagePickerControllerDe
         } else {
             titleTextfield.frame = CGRect(x: screenBounds.width*0.05, y: screenBounds.height*0.43, width: screenBounds.width*0.9, height: screenBounds.height*0.05)
             noteTextfield.frame = CGRect(x: screenBounds.width*0.05, y: screenBounds.height*0.48, width: screenBounds.width*0.9, height: screenBounds.height*0.08)
+        }
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if UIScreen.mainScreen().bounds.width < UIScreen.mainScreen().bounds.height {
+            if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+                
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.Right:
+                    let feedViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FeedViewController") as! FeedViewController
+                    feedViewController.day = day
+                    self.presentViewController(feedViewController, animated: true, completion: nil)
+                default:
+                    break
+                }
+            }
         }
     }
     

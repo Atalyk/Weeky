@@ -47,6 +47,7 @@ class DaysViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCellWithIdentifier("DayCell", forIndexPath: indexPath) as! DayTableViewCell
         cell.dayLabel.text = weekDays[indexPath.row]
         cell.layer.backgroundColor = colors[indexPath.row].CGColor
+        cell.selectionStyle = .None
         return cell
     }
     
@@ -56,19 +57,6 @@ class DaysViewController: UIViewController, UITableViewDelegate, UITableViewData
             feedViewController.day = self.weekDays[indexPath.row]
             self.presentViewController(feedViewController, animated:true, completion: nil)
         }
-    }
-    
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    
-    
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .Destructive, title: "Clear") { (action, indexPath) in
-        }
-        //delete.backgroundColor = UIColor(red: 255/255, green: 150/255, blue: 150/255, alpha: 1.0)
-        
-        return [delete]
     }
 
 }

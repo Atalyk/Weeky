@@ -51,7 +51,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func refreshList() {
   
-        allNotifications = NotificationList.sharedInstance.allNotifications(day)
+        allNotifications = NotificationList.sharedInstance.allNotifications(day).reverse()
         
         if (allNotifications.count >= 64) {
             self.navigationItem.rightBarButtonItem?.enabled = false
@@ -85,8 +85,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         feedView.tableView.delegate = self
         feedView.tableView.dataSource = self
         feedView.tableView.addSubview(refreshControl)
-        feedView.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
-        feedView.tableView.rowHeight = screenBounds.height*0.1
+        feedView.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        //feedView.tableView.rowHeight = screenBounds.height*0.1
         self.view.addSubview(feedView)
     }
     
@@ -104,14 +104,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = feedView.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NotificationTableViewCell
         let notificationObject = allNotifications[indexPath.row] as NotificationObject
-        cell.notificationLabel.text = notificationObject.title as String
+        
+        if notificationObject.title == "" {
+            cell.notificationLabel.text = "No title"
+        } else {
+            cell.notificationLabel.text = notificationObject.title as String
+        }
+       
 
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "H:mm a"
         
         cell.dateLabel.text = dateFormatter.stringFromDate(notificationObject.deadline)
-        cell.noteLabel.text = notificationObject.note as String
         cell.dateLabel.textColor = colors[notificationObject.color-1]
+        cell.selectionStyle = .None
         return cell
     }
     
