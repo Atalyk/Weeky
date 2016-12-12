@@ -125,7 +125,7 @@ class AddNotificationViewController: UIViewController, UIImagePickerControllerDe
         self.view.addSubview(imageView)
         
         titleTextfield = UITextField(frame: CGRect(x: screenBounds.width*0.07, y: screenBounds.height*0.05, width: screenBounds.width*0.9, height: screenBounds.height*0.05))
-        titleTextfield.placeholder = "To do"
+        titleTextfield.placeholder = "Task"
         titleTextfield.sizeToFit()
         titleTextfield.font = UIFont(name: "Helvetica-Bold", size: screenBounds.width*0.06)
         self.view.addSubview(titleTextfield)

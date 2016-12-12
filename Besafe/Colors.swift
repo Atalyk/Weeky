@@ -32,8 +32,8 @@ extension UIColor {
     func sundayColor() -> UIColor {
         return UIColor(red: 240/255, green: 171/255, blue: 255/255, alpha: 1.0)
     }
-    func tagOneColor() -> UIColor {
-        return UIColor(red: 214/255, green: 247/255, blue: 252/255, alpha: 1.0)
+    func customGrayColor() -> UIColor {
+        return UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1.0)
     }
     func tagTwoColor() -> UIColor {
         return UIColor(red: 252/255, green: 215/255, blue: 214/255, alpha: 1.0)

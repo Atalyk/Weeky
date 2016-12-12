@@ -13,8 +13,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     let screenBounds = UIScreen.mainScreen().bounds
     
     var feedView = FeedView()
-    var index = 0
+    var index: NSIndexPath!
     var notify = NotificationObject()
+    var currentRow = -1
+    var cellTapped = false
     
     let colors = [UIColor.mondayColor(UIColor())(), UIColor.tuesdayColor(UIColor())(), UIColor.wednesdayColor(UIColor())(), UIColor.thursdayColor(UIColor())(), UIColor.fridayColor(UIColor())(), UIColor.saturdayColor(UIColor())(), UIColor.sundayColor(UIColor())()]
     
@@ -106,9 +108,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let notificationObject = allNotifications[indexPath.row] as NotificationObject
         
         if notificationObject.title == "" {
-            cell.notificationLabel.text = "No title"
+            cell.notificationLabel.text = "NO TITLE"
         } else {
-            cell.notificationLabel.text = notificationObject.title as String
+            cell.notificationLabel.text = notificationObject.title.uppercaseString as String
         }
        
 
@@ -116,23 +118,67 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         dateFormatter.dateFormat = "H:mm a"
         
         cell.dateLabel.text = dateFormatter.stringFromDate(notificationObject.deadline)
-        cell.dateLabel.textColor = colors[notificationObject.color-1]
+        cell.layerView.layer.backgroundColor = colors[notificationObject.color-1].CGColor
+        cell.noteLabel.text = notificationObject.note
+        cell.noteLabel.hidden = true
+        cell.dateLabel.hidden = true
         cell.selectionStyle = .None
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        notify = allNotifications[indexPath.row] as NotificationObject
         
-        let notificationViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AddNotificationViewController") as! AddNotificationViewController
+        if index != nil && index == indexPath && cellTapped == true {
+            notify = allNotifications[indexPath.row] as NotificationObject
+            
+            let notificationViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AddNotificationViewController") as! AddNotificationViewController
+            
+            notificationViewController.titleNotify = notify.title
+            notificationViewController.noteNotify = notify.note
+            notificationViewController.day = notify.day
+            notificationViewController.url = notify.url
+            
+            self.presentViewController(notificationViewController, animated:true, completion: nil)
+        }
         
-        notificationViewController.titleNotify = notify.title
-        notificationViewController.noteNotify = notify.note
-        //notificationViewController.imagePath = notify.imagePath
-        notificationViewController.day = notify.day
-        notificationViewController.url = notify.url
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! NotificationTableViewCell
+        if cellTapped == false {
+            if index != nil {
+                let cellLast = tableView.cellForRowAtIndexPath(index) as! NotificationTableViewCell
+                cellLast.noteLabel.hidden = true
+                cellLast.dateLabel.hidden = true
+            }
+            cell.noteLabel.hidden = false
+            cell.dateLabel.hidden = false
+            
+        } else {
+            if index != nil {
+                let cellLast = tableView.cellForRowAtIndexPath(index) as! NotificationTableViewCell
+                cellLast.noteLabel.hidden = true
+                cellLast.dateLabel.hidden = true
+            }
+            cell.noteLabel.hidden = true
+            cell.dateLabel.hidden = true
+        }
         
-        self.presentViewController(notificationViewController, animated:true, completion: nil)
+        index = indexPath
+        currentRow = indexPath.row
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        if indexPath.row == currentRow {
+            if cellTapped == false {
+                cellTapped = true
+                return 60
+            } else {
+                cellTapped = false
+                return 40
+            }
+        }
+        return 40
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -150,7 +196,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         delete.backgroundColor = UIColor(red: 255/255, green: 150/255, blue: 150/255, alpha: 1.0)
-
+        
         return [delete]
     }
     
